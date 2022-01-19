@@ -4,9 +4,13 @@ import './App.css';
 
 class App extends React.Component {
     
+    state = {
+        headerText: 'Name It!',
+    };
+
     render () {
         return (
-            <Header />
+            <Header headTitle={this.state.headerText}/>
         )
     }
 }
